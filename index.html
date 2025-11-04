@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAQ Sliders - Sliders Premium para Trailers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="img/MAQ_SLIDERS_LOGO_SinFondo.png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="img/MAQ_SLIDERS_LOGO_SinFondo.png" alt="Logo MAQ Sliders" width="70" height="70">
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="navbar" id="navbar">
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#cotizacion">Cotización</a>
+            <a href="#opiniones">Opiniones</a>
+            <a href="#" id="login-link">Iniciar Sesión</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="featured-product">
+            <div class="product-image">
+                <img src="img/ejemplo1.jpg" alt="Slider Premium">
+            </div>
+            <div class="product-details">
+                <h1>Slider Premium Pro</h1>
+                <p>El slider de máxima resistencia diseñado específicamente para cajas secas de trailers. Fabricado con materiales de alta calidad, garantiza durabilidad y rendimiento superior en las condiciones más exigentes del transporte de carga.</p>
+                <p class="price">$999.99 USD</p>
+                <button class="buy-button">Comprar Ahora</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section class="products-section" id="productos">
+        <h2 class="section-title">Nuestros Productos</h2>
+        <p class="section-subtitle">Soluciones profesionales para tu trailer</p>
+        <div class="products-container">
+            <div class="product-card">
+                <img src="img/p1.jpg" alt="Producto 1">
+                <div class="card-content">
+                    <h3>Slider Premium Pro</h3>
+                    <p>Nuestra línea premium con capacidad de carga superior y sistema anti-corrosión. Ideal para uso intensivo.</p>
+                    <p class="card-price">$999.99</p>
+                    <button class="card-button">Comprar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="img/p2.jpeg" alt="Producto 2">
+                <div class="card-content">
+                    <h3>Slider Standard Plus</h3>
+                    <p>Equilibrio perfecto entre calidad y precio. Resistencia garantizada para operaciones regulares.</p>
+                    <p class="card-price">$799.99</p>
+                    <button class="card-button">Comprar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="img/p3.jpeg" alt="Producto 3">
+                <div class="card-content">
+                    <h3>Slider Essential</h3>
+                    <p>Opción económica sin comprometer calidad. Perfecto para iniciar operaciones.</p>
+                    <p class="card-price">$599.99</p>
+                    <button class="card-button">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Cotización -->
+    <section class="quote-section" id="cotizacion">
+        <h2 class="section-title">Solicita tu Cotización</h2>
+        <p class="section-subtitle-form">Completa el formulario y nos pondremos en contacto contigo</p>
+        <div class="quote-container">
+            <div class="success-message" id="success-message">
+                ¡Cotización enviada exitosamente! Nos pondremos en contacto contigo pronto.
+            </div>
+            <form class="quote-form" id="quote-form">
+                <div class="form-group">
+                    <label for="name">Nombre completo *</label>
+                    <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico *</label>
+                    <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                    <span class="error-message" id="email-error">Por favor, ingresa un correo válido</span>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
+                </div>
+                <div class="form-group">
+                    <label for="product">Producto de interés *</label>
+                    <select id="product" name="product" required>
+                        <option value="">Selecciona un producto</option>
+                        <option value="premium">Slider Premium Pro - $999.99</option>
+                        <option value="standard">Slider Standard Plus - $799.99</option>
+                        <option value="essential">Slider Essential - $599.99</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Cantidad</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1" placeholder="1">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje / Especificaciones</label>
+                    <textarea id="message" name="message" placeholder="Cuéntanos más sobre tu proyecto..."></textarea>
+                </div>
+                <button type="submit" class="submit-button" id="submit-button">Enviar Cotización</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Opiniones -->
+    <section class="reviews-section" id="opiniones">
+        <h2 class="review-title">Lo que dicen nuestros clientes</h2>
+        <p class="section-subtitle">Testimonios reales de operadores satisfechos</p>
+        <div class="reviews-container">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-content">"Excelente producto, superó todas mis expectativas. La calidad es impresionante y el servicio al cliente fue muy atento. Llevo 6 meses usando los sliders y siguen como nuevos."</p>
+                <p class="reviewer">María García - Transportes del Norte</p>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★☆</div>
+                <p class="review-content">"Muy buen producto, cumple con lo prometido. Entrega rápida y sin problemas. La instalación fue sencilla y el equipo funciona perfectamente."</p>
+                <p class="reviewer">Juan Pérez - Logística Express</p>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-content">"Increíble relación calidad-precio. Definitivamente volvería a comprar. Recomiendo estos sliders a todos mis colegas del sector."</p>
+                <p class="reviewer">Ana Martínez - Carga Segura SA</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 MAQ Slider Riel. Todos los derechos reservados.</p>
+        <p>Dirección: Calle Principal #123, San Nicolás de los Garza, Nuevo León, México</p>
+        <p>Teléfono: (811) 571-2664 | Email: info@maqsliders.com</p>
+        <div class="footer-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#cotizacion">Cotización</a>
+            <a href="#opiniones">Opiniones</a>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/8115712664?text=Hola,%20vengo%20de%20la%20página%20web.%20Deseo%20realizar%20el%20siguiente%20pedido:" 
+       class="whatsapp-float" target="_blank" title="Chatea con nosotros">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Modal de Inicio de Sesión -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <button class="close-button" id="close-modal">&times;</button>
+            <h2>Iniciar Sesión</h2>
+            <form class="login-form" id="login-form">
+                <input type="email" id="login-email" placeholder="Correo electrónico de empresa" required>
+                <input type="password" id="login-password" placeholder="Contraseña" required>
+                <span class="login-error" id="login-error">Credenciales incorrectas</span>
+                <span class="login-success" id="login-success">¡Inicio de sesión exitoso!</span>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
